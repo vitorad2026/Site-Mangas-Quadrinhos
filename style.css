@@ -147,7 +147,7 @@ header {
   color: #00cc6a;
 }
 
-/* Grid de Cards */
+
 .card-box {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 230px));
