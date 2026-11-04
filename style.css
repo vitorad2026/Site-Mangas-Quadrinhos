@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #2d263c;
+}
+
+#popular{
+    width: 100%;
+    max-width: 680px;
+    margin:  40px auto;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#popular h2{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    color: #e5e7eb;
+}
+.popular-card{
+    display: flex;
+    width: 100%;
+    height: 280px;
+    background: #53677f;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.popular-info a{
+    text-decoration: none;
+    background-color: rgb(63, 255, 210);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    
+    
+    
+}
+
+.popular-info p{
+    margin-bottom: 15%;
+}
+
+.popular-info h3{
+    margin: 15px;
+}
+
+
+.class-destaque{
+    background-color: rgba(104, 252, 180, 0.728);
+    padding: 10px;
+    border-radius: 5px;
+    border: green solid 3px;
+    margin: 15px;
+    
+
+}
+
+.lista-quadrinhos{
+    background-color: #1c1c30;
+    margin: 10px;
+}
+.lista-quadrinhos a{
+    background-color: rgb(63, 255, 210);
+    padding: 3px;
+    border-radius: 3px;
+    text-decoration: none;
+
+}
+
+.lista-quadrinhos h3{
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: auto;
+}
+
+.lista-quadrinhos img{
+    margin: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.texto{
+    flex: 1;
+}
+#popular-semana{
+    
+    border-radius: 20px;
+    max-width: 150px;
+    height: auto;
+    border: blueviolet 2px solid;
+    object-fit: cover;
+    display: block;
+    
+}
+/* sabe como deixa?----- imagem a direita do texto full? ??? imagem direita do texto full? que tu quer dizer com isso akkaka*/
+#hover-link-smn{
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    width: 20%;
+    box-sizing: border-box;
+    background-color: rgb(95, 255, 159);
+    display: inline-block;
+    text-align: center;
+    text-decoration: none
+    
+    
+}
+#hover-link-smn :hover{
+    transform: scale(1.1);
+   
+}
+#popular-semana{
+    width: 100px; 
+    border-radius: 10px;
+    
+    padding: 15px;
+    
+}
+
+.navbar {
+    
+    background: #1c1c30;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 35px;
+
+    border-bottom: 2px solid blueviolet;
+}
+
+.logo {
+    color: blueviolet;
+    font-size: 22px;
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+    padding: 5px;
+    margin: 10px;
+    
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    color: blueviolet;
+    transform: translateY(-3px);
+}
+
+/* MENU DE TRES TRACINHOS */
+
+.menu-container {
+    position: relative;
+}
+
+.menu-btn {
+    background: transparent;
+    color: white;
+
+    border: none;
+    font-size: 28px;
+
+    cursor: pointer;
+}
+
+/* OPCOES DO MENU */
+
+.menu-opcoes {
+    display: none;
+
+    position: absolute;
+    right: 0;
+    top: 40px;
+
+    background: #1c1c30;
+    border: 1px solid red;
+    border-radius: 10px;
+
+    width: 180px;
+    padding: 10px;
+
+    z-index: 10;
+}
+
+.menu-opcoes a {
+    display: block;
+    color: white;
+
+    text-decoration: none;
+    padding: 12px;
+
+    transition: 0.3s;
+}
+
+.menu-opcoes a:hover {
+    background: #38304a;
+    color: red;
+    border-radius: 5px;
+}
+
+.menu-opcoes.ativo {
+    display: block;
+}
+
+#menu a{
+    text-decoration: none; /* remove sublinhado do link. */
+    background-color: red;
+    padding: 10px;
+    border: solid 2px black;
+    border-radius: 10px;
+}
+
+
+#menu{
+    display: flex;
+    gap: 60px;
+
+}
+
+.lista-quadrinhos img{
+    width: 150px;
+    border-radius: 5px;
+}
+
+.lista-quadrinhos{
+    position: relative;
+}
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.manga img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.manga h3 {
+    text-align: center;
+}
