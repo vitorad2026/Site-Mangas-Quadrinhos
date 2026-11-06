@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+
+
+.lista-capitulos.box{
+    width: 100%;
+    gap: 15;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+.captulo-linha{
+    display: grid;
+    grid-template-columns: 80px 1fr auto;
+    align-items: center;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #231e3d;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 10px;
+    transition: 0.25 ease-in-out;
+
+}
+.capitulo-link{
+    text-decoration: none;
+    font-weight: bold;
+    color: #8675e9;
+    font-size: 0.95rem;
+
+}
+
+/* ver depois */ 
+.lista-dados{
+    flex-direction: column;
+    display: flex;
+    gap: 15px;
+}
+.capitulo-link h3{
+     font-size: 1.1rem;
+     color: #ffffff;
+     font-weight: 600;
+
+}
+
+.capitulo-link p{
+    font-size: 0.5rem;
+     color: #8f8ba8;
+     
+
+}
+
+
+
+.ler{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+}
+.ler p{
+    background-color: rgb(58, 251, 219);;
+    font-size: 1.5rem;
+    text-align: center;
+
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.ler :hover{
+    background-color: rgb(23, 208, 177);;
+}
+
+
+

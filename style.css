@@ -16,27 +16,56 @@ header {
 }
 
 .header-conteiner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  background-color: #121214;
-  color: #00b37e;
-  font-size: 1.5rem;
-  font-weight: bold;
+  color: #00ff88;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #121214;
+    
+    
 }
 
+.btn-menu {
+    font-size: 2.5rem;
+    background: #333;
+    border: 1px solid #333;
+    border-radius: 28px;
+    cursor: pointer;
+    color: white;
+    padding: 15px 20px;
+}
+
+.menu {
+   display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+    background-color: #333;
+    padding: 20px 30px;
+    border: 1px solid white;
+    border-radius: 28px;
+    
+}
+
+
 .menu a {
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
-  font-weight: bold;
-  font-size: 1rem;
+    color: #00ff88;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 28px;
 }
 
 .menu a:hover {
-  color: #00ff88;
+  color: orangered;
 }
+
+/* Quando o menu estiver aberto */
+.menu.ativo {
+    display: flex;
+}
+
 
 
 #popular-semana {
@@ -168,6 +197,7 @@ header {
   width: 100%;
 }
 
+
 .card-semana img {
   width: 100%;
   height: auto;
@@ -191,10 +221,14 @@ header {
 .card-info p {
   font-size: 0.85rem;
   color: #ddd;
+  text-align: center;
 }
 
 .card-semana:hover {
   transform: scale(1.05);
   background-color: rgb(81, 163, 230);
   box-shadow: rgba(72, 73, 73, 0.685) 0px 1px 15px;
+}
+.link-pg{
+  text-decoration: none;
 }
