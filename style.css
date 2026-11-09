@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "FonteSite"; 
+   src: url("fontes/go3v2 3.ttf");
+       
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; 
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -22,9 +31,13 @@ header {
     align-items: center;
     padding: 15px 30px;
     background-color: #121214;
-    
-    
+    font-family: 'FonteSite', 'sans-serif';
 }
+
+h1{
+  font-family: 'FonteSite', 'sans-serif';
+}
+
 
 .btn-menu {
     font-size: 2.5rem;
@@ -39,12 +52,14 @@ header {
 .menu {
    display: none;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     gap: 15px;
     background-color: #333;
     padding: 20px 30px;
     border: 1px solid white;
     border-radius: 28px;
+    width: fit-content;
+    margin-left: auto;
     
 }
 
@@ -139,6 +154,7 @@ header {
   border-radius: 8px;
   width: fit-content;
   transition: 0.3s;
+  
 }
 
 .btn-ler:hover {
