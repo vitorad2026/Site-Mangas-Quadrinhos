@@ -38,6 +38,16 @@ h1{
   font-family: 'FonteSite', 'sans-serif';
 }
 
+<-- codigo adicionado -->
+.tema {
+  background-color: #ffffff;
+  min-width: 90px;
+  height: 44px;
+  padding: 0 18px;
+  border-radius: 22px;
+  border: none;
+   font-size: 15px;
+}
 
 .btn-menu {
     font-size: 2.5rem;
