@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Desktop/js-media/Taxa Garcom"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Site-Mangas-Quadrinhos-main"
+	}
+}

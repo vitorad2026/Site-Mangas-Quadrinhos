@@ -10,3 +10,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 });
+
+
+'use strict';
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const switcher = document.querySelector('.tema');
+
+            switcher.addEventListener('click', function () {
+                const modoEscuro = document.body.classList.toggle('tema-escuro');
+                document.body.classList.toggle('tema-claro', !modoEscuro);
+                this.textContent = modoEscuro ? '☼' : '☽';
+            });
+        });
+    
