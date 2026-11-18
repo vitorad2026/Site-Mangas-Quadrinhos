@@ -292,6 +292,12 @@ h1{
   width: 100%;
 }
 
+.des {
+  font-size: 0.85rem;
+  color: #ddd;
+  text-align: center;
+  color: rgb(255, 111, 0);
+}
 
 .card-semana img {
   width: 100%;
