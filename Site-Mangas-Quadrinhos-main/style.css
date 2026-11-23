@@ -18,6 +18,16 @@ body {
   min-height: 100vh;
 }
 
+
+.logo {
+    width: 75px;
+    height: auto;
+    border-radius: 100%;
+     object-fit: cover;
+     border: 2px solid #0073ff;
+}
+
+
 header {
   border-bottom: 1px solid #29292e;
 }
@@ -154,7 +164,7 @@ h1{
   color: orangered;
 }
 
-/* Quando o menu estiver aberto */
+/* quand menu estiver aberto */
 .menu.ativo {
     display: flex;
 }
@@ -273,23 +283,32 @@ h1{
 
 
 .card-box {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 230px));
-  gap: 15px;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding: 10px 5px 20px;
+  cursor: grab;
+}
+.card-box::-webkit-scrollbar {
+    display: none;
 }
 
 .card-semana {
-  background-color: rgba(83, 65, 105, 0.705);
-  padding: 20px;
-  box-sizing: border-box;
-  border-radius: 15px;
-  overflow: hidden;
-  transition: 0.3s ease;
-  border: 2px solid rgb(0, 140, 255);
-  box-shadow: rgba(72, 73, 73, 0.623) 0px 1px 4px;
-  cursor: pointer;
-  max-width: 230px;
-  width: 100%;
+    flex: 0 0 210px;
+    max-width: 210px;
+    width: 210px;
+    background-color: rgba(83, 65, 105, 0.705);
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    border: 2px solid rgb(0, 140, 255);
+    box-shadow: rgba(72, 73, 73, 0.623) 0px 1px 4px;
+    cursor: pointer;
 }
 
 .des {
@@ -300,11 +319,11 @@ h1{
 }
 
 .card-semana img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-  border-radius: 8px;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
 }
 
 .card-info {
@@ -332,4 +351,73 @@ h1{
 }
 .link-pg{
   text-decoration: none;
+}
+
+
+
+.carrossel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.seta {
+    position: absolute;
+    z-index: 2;
+    width: 45px;
+    height: 65px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.seta:hover {
+    background-color: #00ff88;
+    color: black;
+}
+
+.seta-esquerda {
+    left: 0;
+}
+
+.seta-direita {
+    right: 0;
+}
+
+
+
+.carrossel-container .card-box {
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+
+
+@media (max-width: 600px) {
+
+    .card-semana {
+        flex: 0 0 160px;
+        max-width: 160px;
+        width: 160px;
+    }
+
+    .card-semana img {
+        height: 220px;
+    }
+
+    .seta {
+        width: 35px;
+        height: 50px;
+        font-size: 22px;
+    }
+
+    .carrossel-container .card-box {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
