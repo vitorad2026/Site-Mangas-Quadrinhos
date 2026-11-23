@@ -1,0 +1,75 @@
+
+.lista-capitulos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.capitulo-linha {
+    display: grid;
+    grid-template-columns: 65px 1fr auto;
+    align-items: center;
+
+    padding: 15px;
+
+    background-color: #1c1b20;
+    border: 1px solid #2a4e55;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+    transition: 0.25s ease-in-out;
+}
+
+.capitulo-linha:hover {
+    border-color: #00ff88;
+    transform: translateY(-3px);
+    background-color: #1d1b29;
+}
+
+.capitulo-numero {
+    color: #3be9db;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.capitulo-dados {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.capitulo-link {
+    text-decoration: none;
+}
+
+.capitulo-link h3 {
+    font-size: 1.1rem;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.capitulo-link p {
+    font-size: 0.85rem;
+    color: #8f8ba8;
+}
+
+.ler {
+    text-decoration: none;
+    background-color: rgb(58, 251, 219);
+    color: #171528;
+
+    font-size: 0.9rem;
+    font-weight: bold;
+
+    padding: 8px 18px;
+    border-radius: 6px;
+
+    transition: 0.25s;
+}
+
+.ler:hover {
+    background-color: rgb(23, 208, 177);
+    transform: scale(1.05);
+}
